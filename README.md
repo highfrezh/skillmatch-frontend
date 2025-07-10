@@ -91,7 +91,7 @@ To improve your proposal match score, freelancers should populate their resume p
   "experience": "Developed a freelance job board using Django REST and React. Built user authentication, chat system, and job matching engine.",
   "education": "BSc in Computer Science from University of Ibadan"
 }
-
+```
 
 Here’s a complete **Markdown guide** for running the **SkillMatch frontend (React + Vite + Tailwind CSS)** locally:
 
@@ -119,7 +119,7 @@ This guide explains how to set up and run the frontend of the **SkillMatch** pro
 ```bash
 git clone https://github.com/highfrezh/skillmatch-frontend.git
 cd skillmatch-frontend
-````
+```
 
 ---
 
