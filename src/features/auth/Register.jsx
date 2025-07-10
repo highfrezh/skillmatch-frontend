@@ -14,24 +14,30 @@ export default function Register() {
 
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
   const navigate = useNavigate();
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setError('');
-    try {
-        const res = await api.post('/register/', form);
-        toast.success('Account created! Redirecting to login...');
-        setTimeout(() => {
-        navigate('/login'); // redirect to login
-        }, 2000);
-        } catch (err) {
-            toast.error('Registration failed. Please check your input.');
-        }
-    };
+ const handleSubmit = async (e) => {
+  e.preventDefault();
+  setError('');
+  setLoading(true); // ✅ start loading
+
+  try {
+    const res = await api.post('/register/', form);
+    toast.success('Account created! Redirecting to login...');
+    setTimeout(() => {
+      navigate('/login');
+    }, 2000);
+  } catch (err) {
+    toast.error('Registration failed. Please check your input.');
+  } finally {
+    setLoading(false); // ✅ stop loading
+  }
+};
+
 
 
   return (
@@ -57,10 +63,16 @@ export default function Register() {
             <option value="freelancer">Freelancer</option>
             <option value="employer">Employer</option>
           </select>
-          <button type="submit"
-            className="bg-blue-600 hover:bg-blue-700 text-white py-2 w-full rounded">
-            Register
+          <button
+            type="submit"
+            disabled={loading}
+            className={`w-full py-2 rounded text-white ${
+              loading ? 'bg-blue-300 cursor-not-allowed' : 'bg-blue-600 hover:bg-blue-700'
+            }`}
+          >
+            {loading ? 'Creating Account...' : 'Register'}
           </button>
+
         </form>
         {message && <p className="text-green-600 text-sm mt-3 text-center">{message}</p>}
         {error && <p className="text-red-600 text-sm mt-3 text-center">{error}</p>}
