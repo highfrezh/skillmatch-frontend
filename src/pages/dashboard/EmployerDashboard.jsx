@@ -74,6 +74,8 @@ export default function EmployerDashboard() {
 
   return (
     <DashboardLayout>
+        <br />
+        <br />
       <div className="flex items-center space-x-4 mb-4">
         <img
           src={`https://skillmatchapi.onrender.com${user.profile_picture}`}

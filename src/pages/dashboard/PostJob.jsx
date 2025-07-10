@@ -82,6 +82,8 @@ const handleDelete = async (id) => {
 
   return (
     <DashboardLayout>
+        <br />
+        <br />
       <div className="max-w-4xl">
         <h2 className="text-2xl font-bold mb-4">Post a New Job</h2>
         <form onSubmit={handleSubmit} className="space-y-4">

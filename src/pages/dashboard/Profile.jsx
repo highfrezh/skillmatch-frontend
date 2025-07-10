@@ -72,6 +72,8 @@ export default function Profile() {
 
   return (
     <DashboardLayout>
+        <br />
+        <br />
       <div className="max-w-3xl">
         <h2 className="text-2xl font-bold mb-4">Profile</h2>
 
