@@ -9,6 +9,7 @@ import ResumeProfile from './pages/dashboard/ResumeProfile';
 import PostJob from './pages/dashboard/PostJob';
 import Profile from './pages/dashboard/Profile';
 import Home from './pages/Home';
+import About from './pages/About';
 import Documentation from './pages/Doc'
 import JobDetail from './pages/JobDetail';
 import ChatRoomList from './pages/chat/ChatRoomList';
@@ -87,6 +88,8 @@ function App() {
         <Route path="/chat/:roomId" element={<ChatRoom />} />
 
         <Route path="/docs" element={<Documentation />} />
+        <Route path="/about" element={<About />} />
+
 
 
       </Routes>

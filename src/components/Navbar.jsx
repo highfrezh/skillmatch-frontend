@@ -38,6 +38,8 @@ export default function Navbar() {
               <Link to="/docs" className="text-gray-700 hover:text-blue-600">
                 Documentaion
               </Link>
+              <Link to="/about" className="text-gray-700 hover:text-blue-600">About</Link>
+
 
               <button onClick={handleLogout} className="text-red-600 hover:underline">
                 Logout
@@ -48,6 +50,8 @@ export default function Navbar() {
               <Link to="/docs" className="text-gray-700 hover:text-blue-600">
                 Documentaion
               </Link>
+              <Link to="/about" className="text-gray-700 hover:text-blue-600">About</Link>
+
               <Link to="/login" className="text-gray-700 hover:text-blue-600">
                 Login
               </Link>
