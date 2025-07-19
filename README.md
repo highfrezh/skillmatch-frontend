@@ -97,7 +97,6 @@ Here’s a complete **Markdown guide** for running the **SkillMatch frontend (Re
 
 ---
 
-````md
 # 🌐 How to Run the SkillMatch Frontend (React)
 
 This guide explains how to set up and run the frontend of the **SkillMatch** project on your local machine.
