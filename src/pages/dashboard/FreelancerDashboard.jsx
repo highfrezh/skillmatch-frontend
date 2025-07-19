@@ -35,7 +35,7 @@ export default function FreelancerDashboard() {
         <br />
         <div className="flex items-center space-x-4 mb-4">
         <img
-          src={`https://skillmatchapi.onrender.com${user.profile_picture}`}
+          src={`https://skillmatch-backend-production.up.railway.app${user.profile_picture}`}
           alt="Profile"
           className="w-16 h-16 rounded-full border"
         />

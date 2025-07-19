@@ -78,7 +78,7 @@ export default function EmployerDashboard() {
         <br />
       <div className="flex items-center space-x-4 mb-4">
         <img
-          src={`https://skillmatchapi.onrender.com${user.profile_picture}`}
+          src={`https://skillmatch-backend-production.up.railway.app${user.profile_picture}`}
           alt="Profile"
           className="w-16 h-16 rounded-full border"
         />
@@ -208,7 +208,7 @@ export default function EmployerDashboard() {
                         
                         {proposal.resume_file ? (
                             <a
-                              href={`https://skillmatchapi.onrender.com${proposal.resume_file}`}
+                              href={`https://skillmatch-backend-production.up.railway.app${proposal.resume_file}`}
                               target="_blank"
                               rel="noreferrer"
                               className="inline-block text-sm text-blue-600 hover:underline mt-2"

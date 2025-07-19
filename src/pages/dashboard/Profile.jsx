@@ -83,7 +83,7 @@ export default function Profile() {
             src={
               form.profile_picture
                 ? preview
-                : `https://skillmatchapi.onrender.com${preview}`
+                : `https://skillmatch-backend-production.up.railway.app${preview}`
             }
             alt="Profile"
             className="w-24 h-24 rounded-full object-cover mb-4 border"

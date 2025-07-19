@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://skillmatchapi.onrender.com/api/v1';
+const BASE_URL = 'https://skillmatch-backend-production.up.railway.app/api/v1';
 
 // Create Axios instance
 const apiInstance = axios.create({
